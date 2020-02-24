@@ -35,13 +35,12 @@ class Framework {
         define("CURR_CONTROLLER_PATH", CONTROLLER_PATH . PLATFORM . DS);
         define("CURR_VIEW_PATH", VIEW_PATH . PLATFORM . DS);
 
-         // Load core classes
         require CORE_PATH . "Controller.class.php";
         require CORE_PATH . "Loader.class.php";
         require DB_PATH . "Mysql.class.php";
         require CORE_PATH . "Model.class.php";
 
-        // Load configuration file
+      
         $GLOBALS['config'] = include CONFIG_PATH . "config.php";
 
         session_start();
